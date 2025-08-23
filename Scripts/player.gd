@@ -1,9 +1,10 @@
 extends CharacterBody3D
+@onready var anim_player: AnimationPlayer = $Mesh/AnimationPlayer
 
 ## Determines how fast the player moves
 @export var speed := 5.0
 const JUMP_VELOCITY = 4.5 # constants never change
-@onready var camera: Node3D = $CamerRig/Camera3D
+@onready var camera: Node3D = $CameraRig/Camera3D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -28,6 +29,17 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	turn_to(direction)
+
+	var current_speed := velocity.length()
+	const RUN_SPEED := 3.5
+	const BLEND_SPEED := 0.2
+
+	if current_speed > RUN_SPEED:
+		anim_player.play("freehand_run", BLEND_SPEED)
+	elif current_speed > 0.0:
+		anim_player.play("freehand_walk", BLEND_SPEED, lerp(0.5, 1.75, current_speed / RUN_SPEED))
+	else:
+		anim_player.play("freehand_idle")
 
 func turn_to(direction: Vector3) -> void:
 	if direction.length() > 0:
