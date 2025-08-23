@@ -4,8 +4,12 @@ This repository contains the project files for [our 3D action/adventure game tut
 
 The end result of each episode is stored as its own commit. This commit is for...
 
-### Episode 1: Getting Started in Godot
+### Episode 2: Intro to Code
 
-[![Episode 1: Getting Started in Godot](https://img.youtube.com/vi/VMb3qMpDojQ/0.jpg)](https://www.youtube.com/watch?v=VMb3qMpDojQ)
+[![Episode 2: Intro to Code](https://img.youtube.com/vi/tn0Y27ajc5Y/0.jpg)](https://www.youtube.com/watch?v=tn0Y27ajc5Y)
 
-[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-1)
+[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-2)
+
+### Past Episodes
+
+- [Episode 1: Getting Started in Godot](https://github.com/playableworkshop/action-adventure-series/tree/553900953afba27acddd4c0d3928aef1dd07cbbe)
