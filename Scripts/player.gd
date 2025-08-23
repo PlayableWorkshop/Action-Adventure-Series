@@ -2,14 +2,7 @@ extends CharacterBody3D
 
 ## Determines how fast the player moves
 @export var speed := 5.0
-const JUMP_VELOCITY = 4.5 # constants never change
-
-func get_boosted_speed(boost_multiplier: float) -> float:
-		return speed * boost_multiplier
-
-func _ready():
-	print("about to print boosted speed")
-	print(get_boosted_speed(10))
+const JUMP_VELOCITY = 4.5
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

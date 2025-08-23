@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://djj5tluhy01s2"]
+[gd_scene load_steps=6 format=3 uid="uid://djj5tluhy01s2"]
 
-[ext_resource type="Script" uid="uid://c2ugk0w46axaa" path="res://Scripts/player.gd" id="1_3bxa3"]
+[ext_resource type="PackedScene" uid="uid://e1qhtm5mgnv1" path="res://Scenes/player.tscn" id="1_r48yj"]
+[ext_resource type="PackedScene" uid="uid://c623at08lkjtk" path="res://Meshes/test_level.glb" id="2_r48yj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bk35t"]
 sky_top_color = Color(0.19221, 0.513821, 0.80146, 1)
@@ -17,14 +18,6 @@ sky = SubResource("Sky_3bxa3")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r48yj"]
-albedo_color = Color(0.700709, 0.844647, 0.464015, 1)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bk35t"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ogh5"]
-albedo_color = Color(0.856848, 0.403562, 0.408045, 1)
-
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -34,24 +27,9 @@ environment = SubResource("Environment_r48yj")
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-use_collision = true
-size = Vector3(10, 1, 10)
-material = SubResource("StandardMaterial3D_r48yj")
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="Player" parent="." instance=ExtResource("1_r48yj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.86137, 0)
-script = ExtResource("1_3bxa3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_bk35t")
+[node name="test_level" parent="." instance=ExtResource("2_r48yj")]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-size = Vector3(1, 2, 1)
-material = SubResource("StandardMaterial3D_5ogh5")
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.998299, 0.0582958, 0, -0.0582958, 0.998299, 0, 2.13056, 4.88221)
+[editable path="test_level"]

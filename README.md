@@ -4,13 +4,14 @@ This repository contains the project files for [our 3D action/adventure game tut
 
 The end result of each episode is stored as its own commit. This commit is for...
 
-### Episode 2.5: Type-Safety
+### Episode 3: Assets & Camera Setup
 
-[![Episode 2.5: Type-Safety](https://img.youtube.com/vi/7BYoqmfKDug/0.jpg)](https://www.youtube.com/watch?v=7BYoqmfKDug)
+[![Episode 3: Assets & Camera Setup](https://img.youtube.com/vi/uOqsCUzVNtA/0.jpg)](https://www.youtube.com/watch?v=uOqsCUzVNtA)
 
-[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-2-5)
+[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-3)
 
 ### Past Episodes
 
 - [Episode 1: Getting Started in Godot](https://github.com/playableworkshop/action-adventure-series/tree/553900953afba27acddd4c0d3928aef1dd07cbbe)
 - [Episode 2: Intro to Code](https://github.com/playableworkshop/action-adventure-series/tree/b005f0dc13e86a8f019588ea8ec836c93b0d99a5)
+- [Episode 2.5: Type-Safety](https://github.com/playableworkshop/action-adventure-series/tree/a72e9b33ca89f9a28a532722ef140f1a7dc6c3c0)
