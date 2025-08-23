@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 ## Determines how fast the player moves
-@export var speed: float = 5.0
+@export var speed := 5.0
 const JUMP_VELOCITY = 4.5 # constants never change
 
 func get_boosted_speed(boost_multiplier: float) -> float:
