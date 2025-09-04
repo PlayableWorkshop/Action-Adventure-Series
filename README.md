@@ -4,11 +4,11 @@ This repository contains the project files for [our 3D action/adventure game tut
 
 The end result of each episode is stored as its own commit. This commit is for...
 
-### Episode 5: Basic Animation
+### Episode 6: Basic Animation
 
-[![Episode 5: Basic Animation](https://img.youtube.com/vi/I82QfZZtmwo/0.jpg)](https://www.youtube.com/watch?v=I82QfZZtmwo)
+[![Episode 6: Basic Animation](https://img.youtube.com/vi/L4EYYogZlBA/0.jpg)](https://www.youtube.com/watch?v=L4EYYogZlBA)
 
-[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-5)
+[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-6)
 
 ### Past Episodes
 
@@ -17,3 +17,4 @@ The end result of each episode is stored as its own commit. This commit is for..
 - [Episode 2.5: Type-Safety](https://github.com/playableworkshop/action-adventure-series/tree/a72e9b33ca89f9a28a532722ef140f1a7dc6c3c0)
 - [Episode 3: Assets & Camera Setup](https://github.com/playableworkshop/action-adventure-series/tree/d92db4c29ca1a82ef0a556e60d27292dccfb7495)
 - [Episode 4: Fixing Character Movement](https://github.com/playableworkshop/action-adventure-series/tree/b083980371a023e8966e1f34bddbe9d60b0e8087)
+- [Episode 5: Basic Animation](https://github.com/playableworkshop/action-adventure-series/tree/d8df274265cbce8dc2cc3a6e30ab3dc561272ece)

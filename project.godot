@@ -66,6 +66,11 @@ view_down={
 ]
 }
 
+[physics]
+
+3d/default_gravity=18.0
+common/physics_interpolation=true
+
 [rendering]
 
 rendering_device/driver.windows="d3d12"
