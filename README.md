@@ -4,11 +4,11 @@ This repository contains the project files for [our 3D action/adventure game tut
 
 The end result of each episode is stored as its own commit. This commit is for...
 
-### Episode 6: Basic Animation
+### Episode 7: Audio Basics & Footstep Sounds
 
-[![Episode 6: Basic Animation](https://img.youtube.com/vi/L4EYYogZlBA/0.jpg)](https://www.youtube.com/watch?v=L4EYYogZlBA)
+[![Episode 7: Audio Basics & Footstep Sounds](https://img.youtube.com/vi/tDjZdru5m58/0.jpg)](https://www.youtube.com/watch?v=tDjZdru5m58)
 
-[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-6)
+[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-7)
 
 ### Past Episodes
 
@@ -18,3 +18,4 @@ The end result of each episode is stored as its own commit. This commit is for..
 - [Episode 3: Assets & Camera Setup](https://github.com/playableworkshop/action-adventure-series/tree/d92db4c29ca1a82ef0a556e60d27292dccfb7495)
 - [Episode 4: Fixing Character Movement](https://github.com/playableworkshop/action-adventure-series/tree/b083980371a023e8966e1f34bddbe9d60b0e8087)
 - [Episode 5: Basic Animation](https://github.com/playableworkshop/action-adventure-series/tree/d8df274265cbce8dc2cc3a6e30ab3dc561272ece)
+- [Episode 6: Complex Animation](https://github.com/playableworkshop/action-adventure-series/tree/06d271ee5755bd0dec776801c3ea549b0a555d42)

@@ -1,7 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://djj5tluhy01s2"]
+[gd_scene load_steps=13 format=3 uid="uid://djj5tluhy01s2"]
 
 [ext_resource type="PackedScene" uid="uid://e1qhtm5mgnv1" path="res://Scenes/player.tscn" id="1_r48yj"]
-[ext_resource type="PackedScene" uid="uid://dkauu8pjt3tye" path="res://Meshes/test_level.glb" id="2_r48yj"]
+[ext_resource type="PackedScene" uid="uid://c623at08lkjtk" path="res://Meshes/test_level.glb" id="2_r48yj"]
+[ext_resource type="AudioStream" uid="uid://cqx4awqmdqmdy" path="res://Audio/Music/temple.mp3" id="3_5ogh5"]
+[ext_resource type="Script" uid="uid://be70ew7f8txvw" path="res://Scripts/worldsound.gd" id="3_rk01k"]
+[ext_resource type="AudioStream" uid="uid://dumwxp382v2lw" path="res://Audio/Footsteps/stone_step_sounds.tres" id="4_o3wvq"]
+[ext_resource type="AudioStream" uid="uid://mnsdlpk3pywb" path="res://Audio/Footsteps/wood_step_sounds.tres" id="5_o3wvq"]
+[ext_resource type="AudioStream" uid="uid://dhx3atyxkwu03" path="res://Audio/Footsteps/snow_step_sounds.tres" id="6_7pwkw"]
+[ext_resource type="AudioStream" uid="uid://bsr0elaxx1htx" path="res://Audio/Footsteps/dirt_step_sounds.tres" id="7_5bn4p"]
+[ext_resource type="AudioStream" uid="uid://byqto3dds404c" path="res://Audio/Footsteps/grass_step_sounds.tres" id="8_qmsyr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bk35t"]
 sky_top_color = Color(0.19221, 0.513821, 0.80146, 1)
@@ -30,6 +37,66 @@ shadow_enabled = true
 [node name="Player" parent="." instance=ExtResource("1_r48yj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.86137, 0)
 
+[node name="Skeleton3D" parent="Player/Mesh/HeroRig_export" index="0"]
+bones/0/position = Vector3(-0.0057723, 1.07782, 0.104732)
+bones/0/rotation = Quaternion(1, 5.05692e-15, 1.06581e-14, 6.16095e-08)
+bones/1/rotation = Quaternion(0.759026, 0.0579158, -0.0487191, 0.646646)
+bones/2/rotation = Quaternion(-0.924475, -0.132968, 0.00276797, 0.357293)
+bones/3/rotation = Quaternion(0.836625, -0.00228063, 0.070073, 0.543271)
+bones/4/rotation = Quaternion(-0.138046, -0.0193072, 0.0248144, 0.989927)
+bones/5/rotation = Quaternion(-0.769213, 0.0380038, -0.0151641, 0.637681)
+bones/6/rotation = Quaternion(0.294487, 0.00401051, -0.0246653, 0.955329)
+bones/7/rotation = Quaternion(-0.2784, -0.115369, 0.0244791, 0.953197)
+bones/8/rotation = Quaternion(0.943309, 0.00070624, -0.0358519, -0.329972)
+bones/9/rotation = Quaternion(-0.0644629, 2.82454e-07, -5.58082e-09, 0.99792)
+bones/10/rotation = Quaternion(-0.880813, 0.0330378, 0.0177365, 0.471977)
+bones/11/rotation = Quaternion(0.910845, 0.354922, -0.196287, 0.0765722)
+bones/12/rotation = Quaternion(-0.555228, 0.00590394, -0.0444435, 0.830489)
+bones/13/rotation = Quaternion(-0.132119, -0.244624, 0.288358, 0.916272)
+bones/14/rotation = Quaternion(-0.434575, 0.895009, -0.0717361, 0.070404)
+bones/15/rotation = Quaternion(-0.172143, 0.721074, 0.191825, 0.643135)
+bones/16/rotation = Quaternion(-0.21767, -0.000106906, 0.00037531, 0.976022)
+bones/17/rotation = Quaternion(-0.18079, -1.12149e-06, -2.85453e-07, 0.983522)
+bones/18/rotation = Quaternion(-3.20659e-07, -0.120011, -2.08386e-06, 0.992773)
+bones/19/rotation = Quaternion(0.720689, -0.692637, -0.0135034, -0.0260835)
+bones/20/rotation = Quaternion(0.895439, -0.405811, 0.0901159, -0.159331)
+bones/21/rotation = Quaternion(-0.297188, -0.00678613, 0.0237887, 0.954499)
+bones/22/rotation = Quaternion(-0.259124, 0.280869, -0.0420158, 0.923148)
+bones/24/rotation = Quaternion(0.434575, 0.895009, -0.071736, -0.0704038)
+bones/25/rotation = Quaternion(-0.172143, -0.721073, -0.191825, 0.643135)
+bones/26/rotation = Quaternion(-0.21767, 0.000106799, -0.000375327, 0.976022)
+bones/27/rotation = Quaternion(-0.18079, 1.18968e-06, 3.97563e-07, 0.983522)
+bones/28/rotation = Quaternion(-4.64421e-07, 0.187588, 2.10798e-06, 0.982248)
+bones/29/rotation = Quaternion(0.999716, 5.65719e-09, -6.39324e-08, 0.0238422)
+bones/29/scale = Vector3(1, 1, 1)
+
 [node name="test_level" parent="." instance=ExtResource("2_r48yj")]
 
+[node name="StaticBody3D" parent="test_level/level" index="0"]
+script = ExtResource("3_rk01k")
+footstep_sounds = ExtResource("4_o3wvq")
+
+[node name="StaticBody3D" parent="test_level/wood" index="0"]
+script = ExtResource("3_rk01k")
+footstep_sounds = ExtResource("5_o3wvq")
+
+[node name="StaticBody3D" parent="test_level/snow" index="0"]
+script = ExtResource("3_rk01k")
+footstep_sounds = ExtResource("6_7pwkw")
+
+[node name="StaticBody3D" parent="test_level/grass" index="0"]
+script = ExtResource("3_rk01k")
+footstep_sounds = ExtResource("7_5bn4p")
+
+[node name="StaticBody3D" parent="test_level/dirt" index="0"]
+script = ExtResource("3_rk01k")
+footstep_sounds = ExtResource("8_qmsyr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5ogh5")
+autoplay = true
+bus = &"Music"
+
+[editable path="Player"]
+[editable path="Player/Mesh"]
 [editable path="test_level"]
