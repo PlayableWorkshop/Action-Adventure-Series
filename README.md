@@ -4,11 +4,11 @@ This repository contains the project files for [our 3D action/adventure game tut
 
 The end result of each episode is stored as its own commit. This commit is for...
 
-### Episode 7: Audio Basics & Footstep Sounds
+### Episode 8: State Machines
 
-[![Episode 7: Audio Basics & Footstep Sounds](https://img.youtube.com/vi/tDjZdru5m58/0.jpg)](https://www.youtube.com/watch?v=tDjZdru5m58)
+[![Episode 8: State Machines](https://img.youtube.com/vi/ZyFgwk-L-6Q/0.jpg)](https://www.youtube.com/watch?v=ZyFgwk-L-6Q)
 
-[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-7)
+[Read the article &rarr;](https://www.playableworkshop.com/videos/action-adventure-series-ep-8)
 
 ### Past Episodes
 
@@ -19,3 +19,4 @@ The end result of each episode is stored as its own commit. This commit is for..
 - [Episode 4: Fixing Character Movement](https://github.com/playableworkshop/action-adventure-series/tree/b083980371a023e8966e1f34bddbe9d60b0e8087)
 - [Episode 5: Basic Animation](https://github.com/playableworkshop/action-adventure-series/tree/d8df274265cbce8dc2cc3a6e30ab3dc561272ece)
 - [Episode 6: Complex Animation](https://github.com/playableworkshop/action-adventure-series/tree/06d271ee5755bd0dec776801c3ea549b0a555d42)
+- [Episode 7: Audio Basics & Footstep Sounds](https://github.com/playableworkshop/action-adventure-series/tree/07632d68be2c8ca2bb0e7ceb7788ddcde9bca450)

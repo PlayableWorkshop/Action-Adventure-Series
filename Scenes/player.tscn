@@ -90,45 +90,6 @@ script = ExtResource("2_6t5aa")
 [node name="Camera3D" type="Camera3D" parent="CameraRig"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.5)
 
-[node name="Mesh" parent="." instance=ExtResource("2_cvnsp")]
-transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
-
-[node name="Skeleton3D" parent="Mesh/HeroRig_export" index="0"]
-bones/0/position = Vector3(0.0068729, 1.11812, 0.112105)
-bones/0/rotation = Quaternion(1, 5.05692e-15, 1.06581e-14, 6.16095e-08)
-bones/1/rotation = Quaternion(0.758757, 0.000171913, 0.000153166, 0.651375)
-bones/2/rotation = Quaternion(-0.621574, -0.0292599, 0.0335928, 0.782087)
-bones/3/rotation = Quaternion(0.00257477, -0.00419798, 0.000215658, 0.999988)
-bones/4/rotation = Quaternion(-0.19106, 0.0486676, 0.000558321, 0.980371)
-bones/5/rotation = Quaternion(-0.897271, 0.0827284, 0.010667, 0.433529)
-bones/6/rotation = Quaternion(0.812203, 0.00243228, -0.0680275, 0.579389)
-bones/7/rotation = Quaternion(-0.102539, 0.0186923, -0.0124113, 0.994476)
-bones/8/rotation = Quaternion(0.975246, 0.00194996, -0.0140375, -0.220669)
-bones/9/rotation = Quaternion(-0.0644629, 2.82454e-07, -5.58082e-09, 0.99792)
-bones/10/rotation = Quaternion(-0.80488, 0.0114406, 0.00399135, 0.593314)
-bones/11/rotation = Quaternion(0.945672, 0.299457, 0.0633661, -0.109612)
-bones/12/rotation = Quaternion(-0.299137, 0.00678097, -0.0239446, 0.953886)
-bones/13/rotation = Quaternion(-0.110467, -0.192472, 0.173579, 0.959491)
-bones/14/rotation = Quaternion(-0.434575, 0.895009, -0.0717361, 0.070404)
-bones/15/rotation = Quaternion(-0.172143, 0.721074, 0.191825, 0.643135)
-bones/16/rotation = Quaternion(-0.21767, -0.000106906, 0.00037531, 0.976022)
-bones/17/rotation = Quaternion(-0.18079, -1.12149e-06, -2.85453e-07, 0.983522)
-bones/18/rotation = Quaternion(-2.45448e-07, -0.0963919, -2.09567e-06, 0.995343)
-bones/19/rotation = Quaternion(0.720689, -0.692637, -0.0135034, -0.0260835)
-bones/20/rotation = Quaternion(0.919083, -0.335714, -0.169588, -0.117569)
-bones/21/rotation = Quaternion(-0.269298, -0.00684487, 0.0215563, 0.962791)
-bones/22/rotation = Quaternion(-0.290601, 0.25425, 0.0113098, 0.922377)
-bones/24/rotation = Quaternion(0.434575, 0.895009, -0.071736, -0.0704038)
-bones/25/rotation = Quaternion(-0.172143, -0.721073, -0.191825, 0.643135)
-bones/26/rotation = Quaternion(-0.21767, 0.000106799, -0.000375327, 0.976022)
-bones/27/rotation = Quaternion(-0.18079, 1.18968e-06, 3.97563e-07, 0.983522)
-bones/28/rotation = Quaternion(-4.61377e-07, 0.177018, 2.14275e-06, 0.984208)
-bones/29/rotation = Quaternion(0.999716, 5.65719e-09, -6.39324e-08, 0.0238422)
-bones/29/scale = Vector3(1, 1, 1)
-
-[node name="AnimationPlayer" parent="Mesh" index="1"]
-autoplay = "freehand_idle"
-
 [node name="AnimationTree" type="AnimationTree" parent="."]
 root_node = NodePath("../Mesh")
 tree_root = SubResource("AnimationNodeBlendTree_3smsa")
@@ -138,6 +99,42 @@ parameters/movement/transition_request = ""
 parameters/movement/current_index = 0
 parameters/run_lean/add_amount = 0.0
 parameters/walk_speed/scale = 1.0
+
+[node name="Mesh" parent="." instance=ExtResource("2_cvnsp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Mesh/HeroRig_export" index="0"]
+bones/0/position = Vector3(0.0112305, 1.09792, 0.00104743)
+bones/0/rotation = Quaternion(1, 5.05692e-15, 1.06581e-14, 6.16095e-08)
+bones/1/rotation = Quaternion(0.728177, -0.0159997, -0.0154384, 0.685028)
+bones/2/rotation = Quaternion(-0.797116, -0.0847665, -0.0368793, 0.596708)
+bones/3/rotation = Quaternion(0.297887, -0.00400603, 0.0249501, 0.954267)
+bones/4/rotation = Quaternion(-0.180092, -0.0122142, 0.0839546, 0.979984)
+bones/5/rotation = Quaternion(-0.797451, 0.123767, 0.0885673, 0.583874)
+bones/6/rotation = Quaternion(0.313993, 0.00398415, -0.026299, 0.949053)
+bones/7/rotation = Quaternion(-0.186244, 0.00941808, -0.102934, 0.977051)
+bones/8/rotation = Quaternion(0.993777, -0.00154318, -9.87069e-05, -0.111376)
+bones/9/rotation = Quaternion(-0.0644628, 2.81656e-07, -6.43096e-09, 0.99792)
+bones/10/rotation = Quaternion(-0.750185, 0.0202414, 0.0136071, 0.660778)
+bones/11/rotation = Quaternion(0.979954, 0.186854, 0.0315569, -0.061483)
+bones/12/rotation = Quaternion(-0.303428, 0.00677113, -0.0242881, 0.952521)
+bones/13/rotation = Quaternion(-0.0463471, -0.11874, 0.214301, 0.968415)
+bones/14/rotation = Quaternion(-0.434575, 0.895009, -0.0717361, 0.070404)
+bones/15/rotation = Quaternion(-0.172143, 0.721074, 0.191825, 0.643135)
+bones/16/rotation = Quaternion(-0.21767, -0.000106927, 0.000375333, 0.976022)
+bones/17/rotation = Quaternion(-0.180791, -1.16457e-06, -3.12885e-07, 0.983522)
+bones/18/rotation = Quaternion(-5.36347e-08, -0.0337146, -2.07886e-06, 0.999432)
+bones/19/rotation = Quaternion(0.720689, -0.692637, -0.0135034, -0.0260835)
+bones/20/rotation = Quaternion(0.980998, -0.189316, -0.0424316, -0.00154525)
+bones/21/rotation = Quaternion(-0.393088, -0.00653326, 0.031465, 0.918939)
+bones/22/rotation = Quaternion(0.0424948, 0.0613632, -0.0450366, 0.996193)
+bones/24/rotation = Quaternion(0.434575, 0.895009, -0.071736, -0.0704039)
+bones/25/rotation = Quaternion(-0.172143, -0.721073, -0.191825, 0.643136)
+bones/26/rotation = Quaternion(-0.21767, 0.000106792, -0.000375329, 0.976022)
+bones/27/rotation = Quaternion(-0.18079, 1.14043e-06, 2.90087e-07, 0.983522)
+bones/28/rotation = Quaternion(-6.95727e-08, -0.00546293, 2.17048e-06, 0.999985)
+bones/29/rotation = Quaternion(0.999716, 1.25214e-08, -8.31938e-08, 0.0238422)
+bones/29/scale = Vector3(1, 1, 1)
 
 [node name="footsteps" type="AudioStreamPlayer3D" parent="."]
 bus = &"SoundFX"
